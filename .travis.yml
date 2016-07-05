@@ -9,6 +9,6 @@ branches:
 before_install:
   - wget https://github.com/ga4gh/beacon-team/archive/v0.3.0.tar.gz
   - tar xvf *.tar.gz
-  - mvn install -q -f beacon-team-*/pom.xml
+  - mvn install -q -f beacon-team-*/pom.xml -DskipTests
   - git clone https://github.com/mcupak/beacon-client.git
-  - mvn install -q -f beacon-client/pom.xml
+  - mvn install -q -f beacon-client/pom.xml -DskipTests
